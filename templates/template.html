@@ -26,7 +26,7 @@
         {% block body %}
             {% block nav %}
                 <nav class="header home-menu pure-menu pure-menu-open pure-menu-horizontal">
-                    <a class="pure-menu-heading" href="#">Matt's {% block heading %}Projects{% endblock %} <i class="fa fa-ellipsis-v"></i></a>
+                    <a class="pure-menu-heading" href="#">Matt's {% block navHeading %}Projects{% endblock %} <i class="fa fa-ellipsis-v"></i></a>
                     <ul>
                         <li class="pure-menu-selected"><a href="/" title="Home">Home</a></li>
                         <li><a href="/cit-142" title="CIT-142">CIT-142</a></li>
@@ -34,8 +34,11 @@
                 </nav>
             {% endblock %}
 
+        <main>
             {% block content %}
             {% endblock %}
+        </main>
+
         {% endblock %}
 
     </body>
