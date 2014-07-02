@@ -54,10 +54,10 @@ label {
  */
 
 .banner {
-    background: transparent url('http://codingbasics.net/wp-content/uploads/2014/04/computer-programming.jpeg') 0 0 no-repeat fixed;
+    background: transparent url('/static/images/computer-programming.jpeg') 0 0 no-repeat fixed;
     text-align: center;
     background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://codingbasics.net/wp-content/uploads/2014/04/computer-programming.jpeg', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/computer-programming.jpeg', sizingMethod='scale');
 
     height: 200px;
     width: 100%;
