@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+    <html>
+    <head>
+    {% block head %}
+        {% block meta %}
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="A webpage to display my personal projects and homework.">
+        {% endblock %}
+
+
+        <title>{% block title %}{% endblock %} | Matt's Projects</title>
+
+        {% block link %}
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/pure-min.css') }}">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/grids-responsive-min.css') }}">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/customStyle.css') }}">
+        {% endblock %}
+
+        {% block style %}{% endblock %}
+    {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            {% block nav %}
+                <nav class="header home-menu pure-menu pure-menu-open pure-menu-horizontal">
+                    <a class="pure-menu-heading" href="#">Matt's {% block heading %}Projects{% endblock %} <i class="fa fa-ellipsis-v"></i></a>
+                    <ul>
+                        <li class="pure-menu-selected"><a href="/" title="Home">Home</a></li>
+                        <li><a href="/cit-142" title="CIT-142">CIT-142</a></li>
+                    </ul>
+                </nav>
+            {% endblock %}
+
+            {% block content %}
+            {% endblock %}
+        {% endblock %}
+
+    </body>
+    </html>

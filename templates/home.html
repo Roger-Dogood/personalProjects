@@ -1,0 +1,21 @@
+{% extends "template.html" %}
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block style %}
+    <style>
+        html {background-color: #1f8dd6;}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="splash-container">
+        <div class="splash">
+            <h1 class="splash-head">Matthew Dahl's Projects</h1>
+            <p class="splash-subhead">
+                A place to keep all my stuff.
+            </p>
+        </div>
+    </div>
+{% endblock %}
