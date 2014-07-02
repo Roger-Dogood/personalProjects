@@ -24,15 +24,32 @@
     </head>
     <body>
         {% block body %}
-            {% block nav %}
-                <nav class="header home-menu pure-menu pure-menu-open pure-menu-horizontal">
-                    <a class="pure-menu-heading" href="#">Matt's {% block navHeading %}Projects{% endblock %} <i class="fa fa-ellipsis-v"></i></a>
-                    <ul>
-                        <li class="pure-menu-selected"><a href="/" title="Home">Home</a></li>
-                        <li><a href="/cit-142" title="CIT-142">CIT-142</a></li>
-                    </ul>
-                </nav>
-            {% endblock %}
+            <nav class="header home-menu pure-menu pure-menu-open pure-menu-horizontal">
+                {% block nav %}
+
+                    {% set navigation_bar = [
+                        ('/', 'home', 'Home'),
+                        ('/cit-142', 'cit-142', 'CIT-142')
+                    ] -%}
+
+                    {% set active_page = active_page|default('home') -%}
+
+                        <a class="pure-menu-heading" href="#">
+                            Matt's {% block navHeading %}Projects{% endblock %} <i class="fa fa-ellipsis-v"></i>
+                        </a>
+
+                        {% for href, id, caption in navigation_bar %}
+                            <ul id="navigation">
+                                <li
+                                    {% if id == active_page %}
+                                        class="pure-menu-selected"
+                                    {% endif %}>
+                                    <a href="{{ href|e }}">{{ caption|e }}</a>
+                                </li>
+                            </ul>
+                        {% endfor %}
+                {% endblock %}
+            </nav>
 
         <main>
             {% block content %}

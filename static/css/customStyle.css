@@ -192,6 +192,11 @@ a.pure-button-primary {
     opacity: 0.8;
 }
 
+.mainContent {
+    max-width: 864px;
+    margin: 0 auto;
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
