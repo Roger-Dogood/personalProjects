@@ -1,0 +1,9 @@
+.gist {
+    margin: 0 auto;
+}
+
+.gist-file {
+    max-width: 864px;
+    margin-right: 35px;
+    float: left;
+}

@@ -1,0 +1,37 @@
+{% extends "template.html" %}
+{% set active_page = "homework" %}
+{% block title %}Homework{% endblock %}
+{% block navHeading %}Homework{% endblock %}
+{% block content %}
+<section>
+    <h1>Programming</h1>
+    <div class="container">
+        <img src="" alt="">
+        <ul class="classList">
+            <li class="className">CIT-101</li>
+            <li class="className"><a href="/cit-142">CIT-142</a></li>
+        </ul>
+    </div>
+</section>
+<section>
+    <h1>Databases</h1>
+    <div class="container">
+        <img src="" alt="">
+        <ul class="classList">
+            <li class="className">CIT-150</li>
+            <li class="className">CIT-210</li>
+        </ul>
+    </div>
+</section>
+<section>
+    <h1>Web Design</h1>
+    <div class="container">
+        <img src="" alt="">
+        <ul class="classList">
+            <li class="className">CIT-118</li>
+            <li class="className">CIT-120</li>
+            <li class="className">CIT-206</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

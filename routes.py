@@ -8,7 +8,7 @@ def home():
 
 @app.route('/homework')
 def homework():
-    return render_template('cit-142.html')
+    return render_template('homework.html')
 
 @app.route('/projects')
 def projects():
