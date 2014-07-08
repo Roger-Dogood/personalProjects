@@ -3,35 +3,47 @@
 {% block title %}Homework{% endblock %}
 {% block navHeading %}Homework{% endblock %}
 {% block content %}
-<section>
-    <h1>Programming</h1>
-    <div class="container">
-        <img src="" alt="">
-        <ul class="classList">
-            <li class="className">CIT-101</li>
-            <li class="className"><a href="/cit-142">CIT-142</a></li>
-        </ul>
+<div class="banner">
+    <h1 class="banner-head">
+        HOMEWORK <i class="fa fa-code"></i>
+    </h1>
+</div>
+<div class="l-content">
+    <div class="pricing-tables pure-g">
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-free">
+                <div class="pricing-table-header">
+                    <h2>Programming</h2>
+                </div>
+                <ul class="pricing-table-list">
+                    <li >CIT-101</li>
+                    <li ><a href="/cit-142">CIT-142</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-free">
+                <div class="pricing-table-header">
+                    <h2>Databases</h2>
+                </div>
+                <ul class="pricing-table-list">
+                    <li>CIT-150</li>
+                    <li>CIT-210</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-free">
+                <div class="pricing-table-header">
+                    <h2>Web Design</h2>
+                </div>
+                <ul class="pricing-table-list">
+                    <li>CIT-118</li>
+                    <li>CIT-120</li>
+                    <li>CIT-206</li>
+                </ul>
+            </div>
+        </div>
     </div>
-</section>
-<section>
-    <h1>Databases</h1>
-    <div class="container">
-        <img src="" alt="">
-        <ul class="classList">
-            <li class="className">CIT-150</li>
-            <li class="className">CIT-210</li>
-        </ul>
-    </div>
-</section>
-<section>
-    <h1>Web Design</h1>
-    <div class="container">
-        <img src="" alt="">
-        <ul class="classList">
-            <li class="className">CIT-118</li>
-            <li class="className">CIT-120</li>
-            <li class="className">CIT-206</li>
-        </ul>
-    </div>
-</section>
+</div>
 {% endblock %}
