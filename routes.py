@@ -16,7 +16,15 @@ def projects():
 
 @app.route('/cit-142')
 def cit142():
-    return render_template('cit-142.html')
+    return render_template('cit142/cit-142.html')
+
+@app.route('/cit-142/assignment01')
+def assignment01():
+    return render_template('cit142/assignment01.html')
+
+@app.route('/cit-142/assignment02')
+def assignment02():
+    return render_template('cit142/assignment02.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
