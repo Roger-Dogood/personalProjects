@@ -339,7 +339,7 @@ a.pure-button-primary {
  * Choose a different color based on the type of pricing table.
  */
 .pricing-table-free .pricing-table-header {
-    background: #519251;
+    background: #1f8dd6;
 }
 
 .pricing-table-biz .pricing-table-header {
